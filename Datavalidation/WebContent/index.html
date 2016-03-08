@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>File Uploading Form</title>
+<style>
+table {
+    border: 1px solid black;
+}
+</style>
+<script type="text/javascript">
+    function Checkfiles()
+    {
+        var fup = document.getElementById('filename');
+        var fileName = fup.value;
+        var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+
+    if(ext =="xlsx" || ext=="XLSX")
+    {
+        return true;
+    }
+    else
+    {
+        alert("Upload xlsx files only");
+        return false;
+    }
+    }
+</script>
+
+</head>
+<body>
+<table width="" align="center" 80%"="" style="width: 1000px; height: 500px;">
+<tr>
+<td>
+<h1 align="center"><u>COMS Excel Data File Validator</u></h3>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<tr><td align ="center"><h3><u>File Upload Panel</u></h3></td></tr>
+<td align="top-center">
+<table align="center" style="height: 214px;padding-bottom: 100px;border:0px;">
+<form onsubmit="return Checkfiles();" action="datavalidator" method="post" enctype="multipart/form-data">
+<tr><td>Select a file to upload:</td>
+<td><input type="file" name="file" size="50" id="filename" /></td></tr>
+<tr><td></td><td><input type="submit" value="Upload File" /></td></tr>
+</form>
+<tr><td><br></td></tr>
+<tr><td>For more details on product creation :</td><td><a href="detail.html">Click here</a></td></tr>
+<tr><td><br></td></tr>
+<tr><td >To download a "Sample Sheet" :</td><td><a href="download.jsp">Click here</a></td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
