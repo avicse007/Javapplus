@@ -1,0 +1,7 @@
+com\snapdeal\ite4helthcheck\util\SendEmails$1.class
+com\snapdeal\ite4helthcheck\util\ReadProperty.class
+com\snapdeal\ite4helthcheck\util\ReportGeneration.class
+com\snapdeal\ite4helthcheck\util\SendEmails.class
+com\snapdeal\ite4healthcheck\backendsystem\Main.class
+com\snapdeal\ite4healthcheck\backendsystem\Message.class
+com\snapdeal\ite4healthcheck\backendsystem\BackendSystem.class
